@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: black;
+}
+
+body {
+  font-family: 'Libre Baskerville', sans-serif;
+  text-align: centered;
+}
+
+h1 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+ }
+
+h2 {
+  padding-top: 10px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a href {
+  color: white !important;
+}
+
+#display {
+  margin: 50px 200px 50px 200px;
+  padding-top: 20px;
+  font-family: 'raleway', sans-serif;
+  background-color: lightgray;
+  font-size: 36px;
+  border-radius: 25px;
+  opacity: 0.8;
+  float: none;
+  text-align: center;
+}
+
+button {
+  margin:  30px;
+  font-size: 18px;
+}
+
+#quote {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tweet-share-button {
+  text-color: white;
+}
+
+#footer {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+#credit {
+  color: white;
+}

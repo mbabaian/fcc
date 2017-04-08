@@ -1,0 +1,33 @@
+body {
+  padding-top: 15px;
+  font-family: 'PT Sans Caption', sans-serif;
+  text-align: center;
+  background-color: darkslategray;
+  color: lightgray;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#location {
+  font-size: 36px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.btn {
+  font-size: 24px;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#weather-icon {
+  font-size: 24px;
+}
+
+footer {
+  padding-top: 20px;
+}

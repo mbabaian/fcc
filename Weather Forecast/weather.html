@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- app needs to show weather at user's current location  -- geolocation
+get weather info from https://openweathermap.org/current#geo
+different background image and/or icon depending on weather (sunny, cloudy, etc)
+push button to toggle btw C and F
+-->
+
+<html lang="en-US">
+    <meta charset="UTF-8">
+   <head>
+  <title>Local Weather App</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+ <link rel="stylesheet" href="weather-icons.css">
+  <link rel="stylesheet" href="weather.css">
+ 
+ </head>
+
+<body>
+  <h1>Current Weather Conditions for</h1>
+  <div>
+    <div class="container">
+        <p id="location"></p>
+        <p id="current-region"></p>
+        <p id="date-time"> </p>
+        <p id="current-weather"> </p>
+        <p id="current-icon"> icon placeholder</p>
+        <p class="temp"> <span id="tempF"> </span> Degrees</p>
+          <button type="button" class="btn btn-default btn-lg" id="tempF">F / C</button> </p>
+        
+       
+        <p> Wind Speed <span id="current-wind-mph"> </span> mph</p> 
+        <p> Wind Direction <span id="wind-direction"> </span> </p>
+      
+     
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <footer>Coded by Monica Babaian</footer>
+   <script src="weather.js"></script>
+   <script src="https://api.apixu.com/v1/current.json?key=68629a769f564f9bb6450153170703&q=auto:ip"></script>
+</body>
+
+</html>
