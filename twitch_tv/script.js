@@ -6,47 +6,38 @@
 // CHANNELS 'https://wind-bow.gomix.me/twitch-api/channels/' + userName + '?callback=?'
 // STREAM 'https://wind-bow.gomix.me/twitch-api/streams/' + userName + '?callback=?'
 // fake account "storbeck",
-var userArray = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "habathcx", "RobotCaleb", "storbeck", "noobs2ninjas", "streamerhouse"];
+var userArray = ["ESL_SC2", "OgamingSC2", "cretetion", "comster404", "freecodecamp", "habathcx", "RobotCaleb", "noobs2ninjas", "streamerhouse", "storbeck"];
 
 $(document).ready(function() {
   //get channel 
   for (var i = 0; i < userArray.length; i++) {
+    (function(i){
     $.getJSON('https://wind-bow.gomix.me/twitch-api/channels/' + userArray[i] + '?callback=?', function(data) {
-
-      // logo needs to be input as img
-
       if (data.display_name === undefined && data.url === undefined) {
         $("#channel-name").append("Channel not found");
+        $("#channel-logo").append("NA"); 
+        $("#channel-status").append("STATUS ERROR");
       } else {
         event.preventDefault();
         $("#channel-logo").append('<li style="list-style:none"><img src="' + data.logo + '" alt="channel logo" /> </li>');
         $("#channel-name").append('<li style="list-style:none"> <a href="' + data.url + '"target="blank"> <span>' + data.display_name + '</span>' + '</a> </li>');
-
+        $("#channel-status").append(`<li id='status_${userArray[i]}' style="list-style:none"></li>`);
         //console.log(data.display_name);
         //console.log(data.url);
 
       }
-
-    });
-  }
-
   // get status
-
-  for (var j = 0; j < userArray.length; j++) {
-    $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + userArray[j] + '?callback=?', function(status) {
-
-      //console.log(status.stream);
-
+   $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + userArray[i] + '?callback=?', function(status) {
       // if statement to see whether channel is online
       if (status.stream === null) {
-        $("#channel-status").append('<li style="list-style:none">OFFLINE </li>');
-      } else {
-
-        $("#channel-status").append('<li style="list-style:none">ONLINE: ' + status.stream.game + ' </li>');
-      }
-
+        
+         $(`#status_${userArray[i]}`).html('Offline');
+          } else {
+            $(`#status_${userArray[i]}`).html('ONLINE Streaming: ' + status.stream.game);
+          }
     })
-
-  }
-
+    });
+    })(i)
+    }
 });
+    
