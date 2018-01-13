@@ -18,7 +18,7 @@
 
     var currentWeather = wd.current.condition.text; //tie this to weather icon
 
-    var currentIcon = wd.current.condition.icon;
+    var currentIcon = wd.current.condition.icon; // pulling icon from weather API instead of separate file
       
 
     var tempC = wd.current.temp_c;
