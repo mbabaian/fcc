@@ -24,14 +24,12 @@ Repository for my fcc projects
 | Simon Game | [Completed](https://codepen.io/mbabaian/full/vpvNQW/) |
 | Tic-Tac-Toe | [Completed](https://codepen.io/mbabaian/full/Mrqypx/) |
 
-#### [Certificate](certificates/fcc-front-end-dev.jpg)
-
 ## Data Visualization
 #### React.js
 | Projects | Status |
 | ------- | ------- |
 | Markdown Previewer | [Completed](https://codepen.io/mbabaian/full/JpdVJE/) |
-| Camper Leadboard | [Completed(http://mbabaian-leaderboard.surge.sh/)] |
+| Camper Leadboard | [Completed](http://mbabaian-leaderboard.surge.sh/) |
 | Build a Recipe Box | Not Yet Started |
 | Build the Game of Life | Not Yet Started |
 | Build a Roguelike Dungeon Crawler Game | Not Yet Started |
@@ -64,3 +62,5 @@ Repository for my fcc projects
 | Manage a Book Trading Club | Not Yet Started |
 | Build a Pinterest Clone | Not Yet Started |
 
+## Certificates
+ [Front End](certificates/fcc-front-end-dev.jpg)
