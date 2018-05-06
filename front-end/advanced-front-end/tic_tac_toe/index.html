@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta charset="utf-8"> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="tictactoe.js"></script>        
+        <title>Tic Tac Toe</title>   
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container text-center">
+            <h1>Welcome to Tic Tac Toe!</h1>
+            <h3 id = "character">Choose a character</h3>
+            
+            <button id="btnX" type="button" class="btn btn-lg">X</button>
+            <button id="btnO" type="button" class="btn btn-lg">O</button>
+            <button id="reset" type="button" class="btn btn-lg">Reset</button>
+            
+        <!-- Game Board -->
+            <table class="game-field" align="center">
+                <!-- Row One-->
+                <tr>
+                    <td class="square" id='one'></td>
+                    <td class="square" id='two'></td>
+                    <td class="square" id='three'></td>
+                </tr>
+                <!-- Row Two -->
+                <tr>
+                    <td class="square" id='four'></td>
+                    <td class="square" id='five'></td>
+                    <td class="square" id='six'></td>
+                </tr>
+                <!-- Row Three -->
+                <tr>
+                    <td class="square" id='seven'></td>
+                    <td class="square" id='eight'></td>
+                    <td class="square" id='nine'></td>
+                </tr>
+            </table>
+        <div id='playerStatus'></div>
+        <!-- close container div -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(202, 51, 51);
+    color: white;
+   
+}
+
+#title {
+    margin-top: 80px;
+    font-family: 'Ranchers', cursive;
+    padding-bottom: 20px;
+    font-size: 64px;
+}
+
+#num, #breakNum {
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+}
+
+#start {
+    margin: 70px;
+}
+
+#timeDiv {
+    display: inline;
+}
+
+#title1, #title2, #timeType {
+    font-family: 'Ranchers', cursive;
+    font-size: 3em;
+}
+
+#timeDiv, #breakDiv {
+    padding-top: 30px;
+}
+
+#timeType {    
+    font-size: 40px;
+} 
+
+.fa {
+    color: white;
+    padding: 0 10px 0 10px;
+}
+

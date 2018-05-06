@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+.navbar {  
+  background-color: black;
+  margin-bottom: 0px;
+  padding: 10px;
+  /* box-shadow: 5px 5px 5px #413131; */
+}
+
+#menu {
+  color: white;
+  float: right;  
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+#name {
+  /*font-family: 'Exo 2', sans-serif;*/
+  color: white;
+  font-family: 'Passion One', cursive;
+  font-size: 36px;
+  padding-left: 130px;
+}
+
+/*BODY */
+/* .container-fluid {
+ text-align:center;
+} */
+
+body {  
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 24px;
+  background: #D6CFCF;
+  text-align: center;
+}
+
+#about {
+  margin: 0;
+  padding-top: 100px; 
+  background-color: darkslategray;
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  height: 700px;
+  /* width: 100%; */
+}
+
+.card-group {
+  display: flex;
+  margin-top: 50px;
+}
+
+#job-titles {
+  padding-bottom: 50px;
+}
+
+#description {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px;
+  /* margin: 20px 0 0 0;   */
+  /* width: 85%; */
+}
+
+.description > p {
+  width: 50%;
+}
+
+.progress {
+  margin-top: 10px;
+  /* margin-left: 130px; */
+  width: 50%;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 20%;
+  text-align: center;
+} 
+
+#about {
+  text-align: center;
+  align-items: center;
+}
+
+.btn-group {
+  padding-bottom: 20px;
+}
+
+#portfolio {
+  margin-top: -30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  /* padding-left: 50px; */
+  font-size: 2em; 
+ /* padding-right: 50px; */
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+
+#portfolio h1 {
+  padding-bottom: 40px;
+}
+
+#portfolio h2 {
+  padding-bottom: 20px;
+  /* padding-top: 20px; */
+}
+
+#other-projects {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  column-width: 100px;
+}
+
+#sample {
+  /* padding-top: 50px; */
+  /* width: 50%;*/
+  height: 80% !important;  
+}
+
+#connect {
+  margin-top: -30px;
+ /* padding-left: 50px; */
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.fa {
+ color: white;
+}
+
+.fa-copyright {
+  color: black;
+}
+
+footer {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  /*padding-bottom: 10px;*/
+}
