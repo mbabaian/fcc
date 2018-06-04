@@ -1,9 +1,23 @@
 body {
-    font-family: 'Space Mono', monospace;
+    font-family: Verdana, sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    color: black;
+}
+
+.card {
+    width: 1050px;
+    height: 690px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
 svg {
-    background-color: lightblue;
+    /* background-color: white; */
     margin: 0 auto;
     display: block;
 }
@@ -13,12 +27,12 @@ svg {
 }
 
 .bar {
-    width: 3.5px;
+    width: 5px;
     fill: cadetblue;
 }
 
 .bar:hover {
-    fill: chocolate;
+    fill: rgb(240, 188, 151);
 }
 
 div.tooltip {
